@@ -1,17 +1,113 @@
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
+  margin: 0; /* Add margin to reset default body margin */
+}
+
+#tweakpaneUiContainer {
   overflow: hidden;
+  visibility: hidden;
+}
+
+.sectionTitle {
+  line-height: 10rem;
+  width: 50%;
+  margin: 0px;
+  margin-left: 10%;
+  margin: 0px;
+  font-size: 10rem;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.section2 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.p2 {
+  max-width: 40%;
+  position: relative;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.sectionTitle2 {
+  line-height: 7rem;
+  width: 50%;
+  font-size: 7rem;
+  margin: 0;
+}
+.sectionTitle3 {
+  line-height: 7rem;
+  width: 50%;
+  font-size: 7rem;
+  margin: 0;
 }
 #webgi-canvas {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left:30%;
   border-radius: 0.5rem;
 }
-#webgi-canvas-container{
-  width: 80vw;
-  height: 80vh;
-  margin: 10vh 10vw;
-  border-radius: 0.5rem;
 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+#webgi-canvas-container {
+  position: relative; /* Change position to relative */
+  z-index: -1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100%; /* Change height to 100% */
+  border-radius: 0.5rem;
+}
+
+.navbarBtn {
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 30px;
+  margin-right: 30px;
+  color: white;
+}
+
+.Logo {
+  width: 10%;
+  height: 10%;
+  margin-left: 30px;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  padding: 10px 30px; /* Add padding to create space around navbar content */
+}
+
+.section3 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: fit-content;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15%;
 }
